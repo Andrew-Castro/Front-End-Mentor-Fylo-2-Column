@@ -327,9 +327,19 @@ footer {
         padding-bottom: 50px;
     }
 
-    .split-grid {
+    .section__hero .split-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 500px 1fr;
+    }
+
+    .section__productive .split-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+    }
+
+    .split-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     img {
@@ -438,7 +448,7 @@ footer {
 @media only screen and (max-width: 1000px) {
     .footer-grid {
         display: grid;
-        grid-template-rows: 100px repeat(3, 1fr);
+        grid-template-rows: 100px repeat(2, 1fr) 50px;
         grid-template-columns: 1fr;
     
         &__phone p {
@@ -483,12 +493,28 @@ footer {
         max-width: 100%;
     }
 
+    .section__productive .split-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+    }
+
+    .section__hero .split-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+    }
+
     .split-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 550px 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .productive-content {
+        
+        &__cta {
+            align-content: center;
+            align-self: center;
+            justify-content: center;
+        }
 
         &__testimonial {
             margin-top: 40px;
@@ -542,9 +568,19 @@ footer {
 
 @media only screen and (max-width: 375px) {
 
+    .section__productive .split-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+    }
+
+    .section__hero .split-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+    }
+
     .split-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 350px 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .svg-container {
